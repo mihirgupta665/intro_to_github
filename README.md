@@ -34,6 +34,17 @@ git pull origin main: these is used to pull the changes made in the file of gith
 git add <- file name -> adds new or changed files of our current working directory to git staging area.
 git add . : is used to add all the modified content alltogether.
 git restore --staged <- file name  -> : to unstage a file
+commit: is a record of change       // after commit the chnages will be saved but not published to publish we need to pust the changes.
+git push origin main : upload local repo content to remote repo content
+//origin is the name of the default repository in which changes will be displayed
+//main is the branch in which we are pushing the changes
+
+
+As above stated pull repository could be executed only if repository is first made in the github and then its been cloned and pulled(if changes made at github)
+But as we traditionally makes folders first then project so here comes the role of init commands which initializes the repository
+
+    
+
 
     
 
