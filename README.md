@@ -17,4 +17,23 @@ git config --list                                     // list down the content o
 
 git clone "_link_" : is used to clone a git repository to our local system
 ls : shows files in a directory but       ls -Force : shows all hidden files of a directory(including .git -> which are present in each folder of  which gits saves the history or runs)
+Note: in git hub we dont need to add(staged) the changes we could directly commit them but in git we need to first add the changes(staged : ready to be saved) then commit(save) them. 
 git status:  gives the status of files whether they are up to date or not
+git branch:  to get the name of your git branch
+git pull origin main: these is used to pull the changes made in the file of github 
+
+/*
+    git status:
+
+    untracked: new files which git has not yet tracked
+    modified: changed
+    staged: file is ready to be committed
+    unmodified: unchanged
+*/
+
+git add <- file name -> adds new or changed files of our current working directory to git staging area.
+git add . : is used to add all the modified content alltogether.
+git restore --staged <- file name  -> : to unstage a file
+
+    
+
