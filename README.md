@@ -14,3 +14,7 @@ git config --global user.name="_name_"                // seting the username sam
 git config --global user.email="github_gmail"         // setting the githubgmail
 git config --list                                     // list down the content of git config
 */
+
+git clone "_link_" : is used to clone a git repository to our local system
+ls : shows files in a directory but       ls -Force : shows all hidden files of a directory(including .git -> which are present in each folder of  which gits saves the history or runs)
+git status:  gives the status of files whether they are up to date or not
