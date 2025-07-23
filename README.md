@@ -46,7 +46,7 @@ But as we traditionally makes folders first then project so here comes the role 
 So to make folder first and then creating its git repository goes the following :
 
 create the folder , change your directory to the very same folder then write git init
-git init: 
+Kindly visit the second Repo "intro_2" for the same.
 
 
 
