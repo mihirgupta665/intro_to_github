@@ -43,5 +43,10 @@ git push origin main : upload local repo content to remote repo content
 As above stated pull repository could be executed only if repository is first made in the github and then its been cloned and pulled(if changes made at github)
 But as we traditionally makes folders first then project so here comes the role of init commands which initializes the repository
 
+So to make folder first and then creating its git repository goes the following :
+
+create the folder , change your directory to the very same folder then write git init
+git init: 
+
 
 
