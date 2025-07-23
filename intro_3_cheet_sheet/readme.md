@@ -23,3 +23,10 @@ git commit -m "message"
 git push -u origin <- new branch name ->
 
 */
+
+/*
+Git hacks:
+ git.io  -> takes a input as a git link and shortens it
+ lines could be selected by shift key adn could be send by copying the link
+ blame: is used to tell who has worked on a specified stuff and tell or what was added(green) or removed(red)
+*/
