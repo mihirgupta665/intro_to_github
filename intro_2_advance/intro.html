@@ -1,0 +1,98 @@
+<!-- this is a new repository which was made locally and then shifted to the global(remote) github -->
+<!--
+    git init
+    git remote add origin <- link ->        : this specifies the origin for which changes will be commited
+    git remote -v     (to verify remote)    : to see which is our new origin
+    git branch        (to check branch)     : to see our branch (which could be master or main)
+    git branch -M main (to  rename branch)  : if its a master or other branch then rename it to main branch
+    git push origin main                    : 
+    /*
+    An error may interrupt: src refspec main does not match any
+    (= There is no actual "main" branch to push yet)
+
+    this is because we don’t have any commits yet, so no branch actually exists yet — it's just an empty Git repo with no snapshot to push.
+
+    solution:
+
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin main
+
+    this will create a staged sight then snap shots(commits) to a branch
+    */
+    or git push -u origin main              : if for  a long duration we have to use a same directory then by adding -u we could get rid of orgin main specification(by simpally writing git push)
+-->
+
+<!-- 
+    Git Branches
+    - for dealing with many teams or working on many features branches are created which have thier own copy of main branch and appendments are made then implemented and lastly merged back to main branch on completion
+
+    git branch : to check the branch currently working in
+    git branch -M main : to rename branch
+    git checkout <- branch name :  to navigate between branches 
+    git checkout -b  <- new branch name : to create new branch
+    git branch -d <- branch name -> : to delete branch
+
+
+
+    Merging the branch to main branch:
+
+    way 1 (command line):
+    git diff <- branch name  :   to compare commits, branches, files & more
+    q  : // it opens a pager scrollable screen which could be exit by pressing  :  q
+    git merge <- branch name ->  : to merge 2 branches 
+
+    way 2 (using remote git hub):
+    Create a PR by pull request  ->  it lets us tell to world that we have pushed some changes in a branch  for a repository on GitHub.
+    
+    then
+    // on github(remote) main branch changes will be visible
+    // on vscode main branch the changes will not be visible (note if you are in other branch vhanges may be visible but in main branch it will not be visible)
+    thus we need to pull the github main branch onto vscode main branch for updation
+    
+    git pull origin main   : used to fetch  and download  content from a remote repo and immediately update the local repo to match that content
+-->
+
+
+<!--
+    Reslving conflicts : 
+    hi i am gupta 
+-->
+<!--  
+    Resolving merge conflicts:
+    
+    Hi i am mihir
+
+-->
+
+<!-- git log    : is used to make the changes -->
+
+<!-- 
+    Undoing Changes : 
+
+    case 1: staged changes (if just added )
+            git reset  : <- file name ->
+            or 
+            git reset  : if many files has the changes
+    
+    case 2: commited changes (for one commit)
+             git reset HEAD~1 
+            // all teh changes are as nodes of tree so the latest commit change is called the head. Thus the above command deletes the latest head commit
+    
+    case 3: if multiple commits need to be reset
+            git reset <- hash code ->    : this reset the code to the specified hash code  
+    // every commit has its unique hash code which is targeted to reach that stage. Note: the hard ocde on vs coode still remains on the editor could be add commit and push again
+            git reset --hard <- hash code ->  :  this not only makes the program to reach to a specified commit state but also deletes all the code even form the editor(vs code) which was written after that specified commit
+            // now  modified or change state which could be added or commited will now not appear
+-->
+
+<!--
+        Fork(rough copy) : A Fork is a new repository that shares code and visibility  settings with respect to the original "upstream" repository
+        after that any changes which gets commited will reflect in our forked repository 
+
+-->
+
+<!-- 
+    For team project, Don't become the node_modules in a project be a package.json in every project.
+    So that everyone feels lucky to have you when its time to push on Github(competative tournament).
+-->
